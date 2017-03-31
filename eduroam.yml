@@ -1,10 +1,11 @@
 ---
 - name: Provision the infrastructure
   hosts: localhost
+  connection: local
   roles:
   - eduroam-provision
 
 # - name: Provision the hosts
-#   hosts: eduroam-hosts
+#   hosts: eduroam-host
 #   roles:
 #   - eduroam-configure
