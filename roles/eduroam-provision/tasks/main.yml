@@ -11,15 +11,7 @@
 
 - name: Debug
   debug:
-    var: docker_container
-  
-
-- name: Create the eduroam-hosts group
-  add_host:
-    name: eduroam-host
-    groups: eduroam-hosts
-
-# - setup:
+    var: container
 
 - name: Debug the groups
   debug:
